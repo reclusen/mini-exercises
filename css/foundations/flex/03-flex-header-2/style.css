@@ -8,10 +8,13 @@ body {
   font-family: Besley, serif;
 }
 
-.header {
+.header { 
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  padding: 8px;
 }
 
 .profile-image {
@@ -27,6 +30,24 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* margin-right: 0; */
+}
+
+.links {
+  display: flex;
+  padding-left: 0;
+  margin-left: 8px;
+  /* border: 1px solid #000; */
+}
+
+.links li {
+  margin-left: 16px;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 button {
@@ -35,6 +56,11 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  margin-right: 20px;
+}
+
+.notifications, .profile-image {
+  flex-shrink: 0;
 }
 
 a {
