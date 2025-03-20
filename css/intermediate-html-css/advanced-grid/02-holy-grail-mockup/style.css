@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 97px 50px 1fr 45px;
+  text-align: center;
+  height: 100vh;
+  gap: 4px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+/* .container GRID ITEM */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-column: 1 / 6;
+  background-color: #393f4d;
+}
+
+.header .logo {
+  justify-self: left;
+}
+
+/* .menu ul, */
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+/* .container GRID ITEM */
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row: 2 / 4;
+  gap: 50px;
+  background-color: #C50208;
+}
+
+.sidebar div {
+  align-content: center;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+}
+
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* .container GRID ITEM */
+.nav {
+  display: grid;
+  grid-column: 2 / 6;
+  align-items: center;
+  background-color: #C50208;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+/* .container GRID ITEM */
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column: 2 / 6;
+  gap: 15px;
+  background-color: #bccbde;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  height: 200px;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* .container GRID ITEM */
+.footer {
+  grid-column: span 5;
+  background-color: #393f4d;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;
+}
